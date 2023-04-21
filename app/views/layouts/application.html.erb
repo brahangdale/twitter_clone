@@ -20,6 +20,7 @@
           <%= link_to "Sign in", new_user_session_path%>
         <%end%>
       </li>
+      <li style="float: right;"><p class="name"><%= "Log in user:-#{current_user.email}" if user_signed_in?%></p></li>
     </ul>
     <div class="main_body">
     <p class="notice"><%= notice %></p>
